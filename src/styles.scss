@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+@import "./assets/variables.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Smooch&display=swap');
+
+@font-face {
+  font-family: 'MulishFont';
+  src: url('./assets/fonts/Mulish-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: 'LatoFont';
+  src: url('./assets/fonts/Lato-BlackItalic.ttf');
+}
+.test-font{
+  font-family: 'Smooch';
+  color: $primary-color;
+
+}
