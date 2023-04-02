@@ -1,0 +1,20 @@
+.card {
+
+  background: #117bd4;
+  box-shadow: 0px 28px 52px rgba(0, 61, 113, 0.2);
+  padding: 20px;
+  text-align: left;
+  width: 380px;
+
+  .heading {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .text {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 0;
+  }
+}

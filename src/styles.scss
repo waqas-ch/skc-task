@@ -12,8 +12,37 @@
   font-family: 'LatoFont';
   src: url('./assets/fonts/Lato-BlackItalic.ttf');
 }
+body{
+  background: $main_bg;
+   .round-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+    i {
+      font-size: 40px;
+      color: #555;
+    }
+  }
+  .primary-bg{
+    background-color: $primary-color !important;
+  }
+  .secondary-bg{
+    background-color: $secondary-color !important;
+  }
+  .primary-color{
+    color: $primary-color !important;
+  }
+  .secondry-color{
+    color: $secondary-color !important;
+  }
+}
 .test-font{
   font-family: 'Smooch';
   color: $primary-color;
-
 }
