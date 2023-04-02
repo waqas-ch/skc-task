@@ -1,0 +1,45 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f2f2f2;
+
+  .col {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+
+    &:nth-child(odd) {
+      margin-right: 20px;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      padding: 20px;
+      text-align: center;
+
+      .heading {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .text {
+        font-size: 16px;
+        color: #555;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    .col {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+}
