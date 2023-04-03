@@ -9,6 +9,7 @@ import { MainLayoutComponent } from './layout/main-layout/main-layout.component'
 import { CoverImageComponent } from './layout/main-layout/cover-image/cover-image.component';
 import { CardComponent } from './layout/main-layout/card/card.component';
 import { FreqQuestionComponent } from './layout/main-layout/freq-question/freq-question.component';
+import { CustomEssayComponent } from './layout/main-layout/custom-essay/custom-essay.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FreqQuestionComponent } from './layout/main-layout/freq-question/freq-q
     MainLayoutComponent,
     CoverImageComponent,
     CardComponent,
-    FreqQuestionComponent
+    FreqQuestionComponent,
+    CustomEssayComponent
   ],
   imports: [
     BrowserModule,

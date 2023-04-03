@@ -1,0 +1,87 @@
+@import "/src/assets/variables.scss";
+
+.row {
+  display: flex;
+  flex-direction: row;
+
+  .col {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .left-col {
+    overflow-y: scroll;
+    max-height: 375px;
+    margin: 25px;
+    flex: 1;
+    .sub-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+      width: 100%;
+      .content {
+        display: flex;
+        align-items: center;
+        height: 50px;
+        padding: 0 10px;
+        width: 80%;
+        background-color: $secondary-color;
+        cursor: pointer;
+        .bar {
+          width: 2px;
+          height: 100%;
+          background: rgba(1, 58, 101, 0.4);
+          margin-right: 10px;
+        }
+
+        .text {
+          margin-right: auto;
+          font-size: 12px;
+        }
+
+      }
+    }
+
+    /* Customize the scroll bar */
+    &::-webkit-scrollbar {
+      width: 10px;
+      background-color: $dim-white1;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $primary-color;
+      border-radius: 5px;
+    }
+  }
+
+  .right-col {
+    overflow-y: scroll;
+    max-height: 375px;
+    flex: 1;
+
+    .content {
+    margin: 25px;
+
+      p {
+        line-height: 1.5;
+        margin-bottom: 20px;
+        color: $secondary-color;
+        padding: 20px;
+        background-color: $primary-color;
+      }
+    }
+
+    /* Customize the scroll bar */
+    &::-webkit-scrollbar {
+      width: 10px;
+      background-color: $primary-color;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color:$secondary-color;
+      border-radius: 5px;
+    }
+  }
+}

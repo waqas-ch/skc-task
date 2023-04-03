@@ -23,13 +23,14 @@
       display: flex;
       align-items: center;
       height: 50px;
-      padding: 0 10px;
       width: 80%;
+      padding: 0 10px 0px 0px;
+
       background-color: $secondary-bg;
       .bar {
         width: 2px;
         height: 100%;
-        background: rgba(1, 58, 101, 0.4);
+        background: rgba(124, 124, 124, 0.5);
         margin-right: 10px;
       }
 
