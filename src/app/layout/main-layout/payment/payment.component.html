@@ -1,0 +1,82 @@
+<div class="container">
+  <div class="left-column">
+    <p>Follow the steps to place your order!</p>
+    <h2>Calculate Price</h2>
+    <div class="card">
+      <div class="sub-container">
+        <form>
+          <label for="email">Email Address<span>*</span></label>
+          <input
+            type="email"
+            placeholder="abc@gmail.com"
+            id="email"
+            name="email"
+          /><br />
+          <label for="email">Phone Number<span>*</span></label>
+
+          <div class="select-field">
+
+            <select name="country" id="country">
+              <option value="us" data-icon="🇺🇸" selected></option>
+              <option value="ca" data-icon="🇨🇦"></option>
+              <option value="gb" data-icon="🇬🇧"></option>
+              <!-- Add more options for other countries -->
+            </select>
+
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              placeholder="Enter phone number"
+            />
+          </div>
+          <br />
+
+        </form>
+        <p>We hate spam as much as you do. We will Never sell, rent or share your email address and phone number.</p>
+      </div>
+      <div class="sub-container">
+        <form>
+          <label for="email">Email:</label>
+          <select name="country" id="country">
+            <option value="" disabled selected>Select your option</option>
+            <option value="us"  >You study at?s</option>
+            <option value="us"  >Youzxa asd study at?s</option>
+
+
+            <!-- Add more options for other countries -->
+          </select><br />
+
+          <label for="mobile">Mobile Number:</label>
+          <select name="country" id="country" >
+            <option value="" disabled selected>Select your option</option>
+            <option value="us"  >You study at?s</option>
+
+            <!-- Add more options for other countries -->
+          </select><br />
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="right-column">
+    <div class="card">
+      <h2>Summary of Bill</h2>
+      <p>Total: $100</p>
+    </div>
+
+    <div class="card">
+      <h2>Payment Information</h2>
+      <form>
+        <label for="card-number">Card Number:</label>
+        <input type="text" id="card-number" name="card-number" /><br />
+
+        <label for="expiration-date">Expiration Date:</label>
+        <input type="text" id="expiration-date" name="expiration-date" /><br />
+
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </div>
+</div>

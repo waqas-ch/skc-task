@@ -10,6 +10,7 @@ import { CoverImageComponent } from './layout/main-layout/cover-image/cover-imag
 import { CardComponent } from './layout/main-layout/card/card.component';
 import { FreqQuestionComponent } from './layout/main-layout/freq-question/freq-question.component';
 import { CustomEssayComponent } from './layout/main-layout/custom-essay/custom-essay.component';
+import { PaymentComponent } from './layout/main-layout/payment/payment.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CustomEssayComponent } from './layout/main-layout/custom-essay/custom-e
     CoverImageComponent,
     CardComponent,
     FreqQuestionComponent,
-    CustomEssayComponent
+    CustomEssayComponent,
+    PaymentComponent
   ],
   imports: [
     BrowserModule,

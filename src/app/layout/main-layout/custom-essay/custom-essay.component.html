@@ -1,16 +1,19 @@
 <div class="row">
   <div class="left-col">
     <div class="sub-container" *ngFor="let item of items">
-      <div class="content" (click)="selectedContent =item">
+
+      <div  class="content" (click)="selectedContent=item"  >
         <div class="bar"></div>
-        <p class="text">{{item.text}}</p>
+        <span [ngClass]="item.id === selectedContent?.id ? 'primary-bg secondary-color' : 'secondary-bg '">
+          <p class="text">{{item.text}}</p>
+        </span>
+
       </div>
     </div>
   </div>
   <div class="right-col">
-    <div class="content">
       <p>{{selectedContent?.fullText}}
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a euismod ipsum. Ut eu molestie justo, sed tempor purus. Suspendisse nunc nisl, ultricies sit amet neque non, posuere volutpat lacus. Etiam id maximus ligula. Ut nisl quam, iaculis quis lorem condimentum, sagittis pellentesque quam. Vivamus ornare, turpis ut laoreet mattis, ipsum enim efficitur eros, sit amet consectetur diam nulla ac mauris. Donec consequat ex at urna ullamcorper congue. Duis vitae luctus nisl. Curabitur eget vestibulum eros, eu facilisis leo. Fusce molestie velit augue, in laoreet eros dignissim non. Sed feugiat quam dolor, in tempor ante laoreet quis. Suspendisse lobortis, nulla a faucibus mollis, tortor purus aliquam mauris, sit amet tempor mi tortor eu justo. Aenean convallis nisi a ante posuere fringilla. Nam at nisi magna. In ut neque eu ante scelerisque sodales in vel sapien. Curabitur elementum elit quam.</p>
-    </div>
   </div>
 </div>
+<!--  [ngClass]="'primary-bg': item.id === selectedContent?.id, 'secondary-bg' : item.id !== selectedContent?.id" -->
