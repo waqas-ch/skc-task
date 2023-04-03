@@ -1,6 +1,9 @@
 <div [ngClass]="'card '+ data.bg">
   <div [ngClass]="'round-icon ' + data.iconBg">
-    <img [src]="data.icon"/>
+    <img *ngIf="data.icon else gotoElse" [src]="data.icon"/>
+    <ng-template #gotoElse>
+      <h1 [ngClass]="'heading '+ data.countClr">{{index}}</h1>
+    </ng-template>
   </div>
     <h2 [ngClass]="'heading '+ data.headingClr">{{data.heading}}</h2>
     <p [ngClass]="'text '+ data.textColor">{{data.text}}

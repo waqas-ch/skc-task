@@ -38,8 +38,14 @@ body{
   .primary-color{
     color: $primary-color !important;
   }
-  .secondry-color{
+  .secondary-color{
     color: $secondary-color !important;
+  }
+  .dark-text-color{
+    color: $dark-txtClr!important;
+  }
+  .light-text-color{
+    color: $light-txtClr !important;
   }
 }
 .test-font{

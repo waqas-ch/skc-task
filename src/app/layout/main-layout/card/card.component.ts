@@ -7,4 +7,6 @@ import { Component, Input } from '@angular/core';
 })
 export class CardComponent {
   @Input() data:any
+  @Input() index:number=0;
+
 }
