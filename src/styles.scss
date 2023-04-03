@@ -1,21 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
 @import "./assets/variables.scss";
 
-@import url('https://fonts.googleapis.com/css2?family=Smooch&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Smooch&display=swap");
 
 @font-face {
-  font-family: 'MulishFont';
-  src: url('./assets/fonts/Mulish-VariableFont_wght.ttf');
+  font-family: "MulishFont";
+  src: url("./assets/fonts/Mulish-VariableFont_wght.ttf");
 }
 
 @font-face {
-  font-family: 'LatoFont';
-  src: url('./assets/fonts/Lato-BlackItalic.ttf');
+  font-family: "LatoFont";
+  src: url("./assets/fonts/Lato-BlackItalic.ttf");
 }
-body{
+body {
   background: $main_bg;
   margin: 0px;
-   .round-icon {
+  .round-icon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,26 +30,62 @@ body{
       color: #555;
     }
   }
-  .primary-bg{
+  .primary-bg {
     background-color: $primary-color !important;
   }
-  .secondary-bg{
+  .secondary-bg {
     background-color: $secondary-color !important;
   }
-  .primary-color{
+  .primary-color {
     color: $primary-color !important;
   }
-  .secondary-color{
+  .secondary-color {
     color: $secondary-color !important;
   }
-  .dark-text-color{
-    color: $dark-txtClr!important;
+  .dark-text-color {
+    color: $dark-txtClr !important;
   }
-  .light-text-color{
+  .light-text-color {
     color: $light-txtClr !important;
   }
+  .btn {
+    border: 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+  }
+
+  .btn-md {
+    padding: 10px 20px;
+    font-size: 20px;
+  }
+  .btn-sm {
+    padding: 5px 20px;
+    font-size: 15px;
+  }
+  .btn-primary {
+    background-color: $primary-color;
+    color: $secondary-color;
+    border-color: $secondary-color;
+    &:hover {
+      background-color: $secondary-color;
+      color: $dark-txtClr;
+      border-color: $primary-color;
+    }
+  }
+  .btn-secondary {
+    background-color: $secondary-color;
+    color: $dark-txtClr;
+    border-color: $primary-color;
+
+    &:hover {
+      background-color: $primary-color;
+      color: $secondary-color;
+      border-color: $secondary-color;
+    }
+  }
 }
-.test-font{
-  font-family: 'Smooch';
+.test-font {
+  font-family: "Smooch";
   color: $primary-color;
 }
