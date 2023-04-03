@@ -1,54 +1,51 @@
 @import "/src/assets/variables.scss";
 
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 40px;
-  background-color: $secondary-color;
 
-  .heading {
-    text-align: center;
-    margin-bottom: 20px;
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $primary-color;
+  padding: 20px;
+
+  .footer-text {
+    font-size: 14px;
+    color: $secondary-color;
   }
 
-  .sub-container {
+  .footer-links {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    margin-top: 10px;
-    width: 100%;
-    .content {
-      display: flex;
-      align-items: center;
-      height: 50px;
-      padding: 0 10px;
-      width: 50%;
-      background-color: $secondary-bg;
-      .bar {
-        width: 2px;
-        height: 100%;
-        background: rgba(1, 58, 101, 0.4);
-        margin-right: 10px;
-      }
 
-      .text {
-        margin-right: auto;
-        font-size: 12px;
-      }
-      .arrow {
-        width: 0;
-        height: 0;
-        border-left: 5px solid transparent;
-        border-right: 5px solid transparent;
-        border-top: 5px solid #333;
+    a {
+      margin: 0 10px;
+      color: $secondary-color;
+      text-decoration: none;
+      font-size: 14px;
+
+      &:hover {
+        text-decoration: underline;
       }
     }
   }
 
-  .subheading {
-    margin: 0;
-    font-size: 18px;
+  .footer-icons {
+    display: flex;
+
+    a {
+      margin-left: 10px;
+      color: #333;
+      text-decoration: none;
+      font-size: 20px;
+
+      &:hover {
+        color: #666;
+      }
+
+      i {
+        transition: color 0.2s ease-in-out;
+      }
+    }
   }
 }

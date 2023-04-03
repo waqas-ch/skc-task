@@ -1,0 +1,50 @@
+@import "/src/assets/variables.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background-color: $secondary-color;
+
+  .heading {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .sub-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+    .content {
+      display: flex;
+      align-items: center;
+      height: 50px;
+      padding: 0 10px;
+      width: 80%;
+      background-color: $secondary-bg;
+      .bar {
+        width: 2px;
+        height: 100%;
+        background: rgba(1, 58, 101, 0.4);
+        margin-right: 10px;
+      }
+
+      .text {
+        margin-right: auto;
+        font-size: 12px;
+      }
+      .arrow {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .subheading {
+    margin: 0;
+    font-size: 18px;
+  }
+}

@@ -8,6 +8,7 @@ import { AppFooterComponent } from './layout/app-footer/app-footer.component';
 import { MainLayoutComponent } from './layout/main-layout/main-layout.component';
 import { CoverImageComponent } from './layout/main-layout/cover-image/cover-image.component';
 import { CardComponent } from './layout/main-layout/card/card.component';
+import { FreqQuestionComponent } from './layout/main-layout/freq-question/freq-question.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CardComponent } from './layout/main-layout/card/card.component';
     AppFooterComponent,
     MainLayoutComponent,
     CoverImageComponent,
-    CardComponent
+    CardComponent,
+    FreqQuestionComponent
   ],
   imports: [
     BrowserModule,
