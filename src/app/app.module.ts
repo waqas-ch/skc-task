@@ -11,6 +11,8 @@ import { CardComponent } from './layout/main-layout/card/card.component';
 import { FreqQuestionComponent } from './layout/main-layout/freq-question/freq-question.component';
 import { CustomEssayComponent } from './layout/main-layout/custom-essay/custom-essay.component';
 import { PaymentComponent } from './layout/main-layout/payment/payment.component';
+import { BillComponent } from './layout/main-layout/bill/bill.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,11 +24,13 @@ import { PaymentComponent } from './layout/main-layout/payment/payment.component
     CardComponent,
     FreqQuestionComponent,
     CustomEssayComponent,
-    PaymentComponent
+    PaymentComponent,
+    BillComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
