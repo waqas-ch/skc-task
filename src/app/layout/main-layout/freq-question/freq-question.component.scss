@@ -15,6 +15,7 @@
 
   .sub-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 10px;
@@ -43,6 +44,29 @@
       }
       .arrow {
         cursor: pointer;
+      }
+    }
+    .hidden-div{
+      display: flex;
+      align-items: center;
+      width: 80%;
+      padding: 0 10px 0px 0px;
+      background-color: $secondary-color;
+      box-shadow: 0px 28px 52px rgba(0, 61, 113, 0.2);
+      .bar {
+        width: 5px;
+        height: 100%;
+        background: rgba(124, 124, 124, 0.5);
+        margin-right: 10px;
+      }
+
+      .text {
+        margin-right: auto;
+        font-size: 12px;
+        color: #9A9AB0;
+        b{
+          font-size: 20px;
+        }
       }
     }
   }

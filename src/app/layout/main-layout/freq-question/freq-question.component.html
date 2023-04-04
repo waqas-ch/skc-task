@@ -1,13 +1,24 @@
-
 <div class="container">
   <h1 class="heading">Frequently asked questions</h1>
   <div class="sub-container" *ngFor="let item of items">
     <div class="content">
       <div class="bar"></div>
-      <p class="text"><b>Q. </b>{{item.text}}</p>
-      <div >
-        <img class="arrow" src="assets/images/icon.svg"/>
+      <p class="text"><b>Q. </b>{{ item.text }}</p>
+      <div>
+        <img
+          [style.transform]="item.active?'rotate(180deg)':'rotate(0deg)'"
+          (click)="questionClick(item)"
+          class="arrow"
+          src="assets/images/icon.svg"
+        />
       </div>
     </div>
+    <ng-container *ngIf="visible?.id == item.id && visible?.active">
+      <div class="hidden-div">
+          <div class="bar"></div>
+          <p class="text"><b>A. </b>Unfortunately, we don’t write essays for free. However, we do provide free samples of previous essays we have written. Be very careful of someone who is promising you an essay for “free”. You get what you pay for. Nothing is free and if it is free then you might end with a low-quality essay.
+            We offer reasonably priced services so that students can get quality writing help within their budget.</p>
+      </div>
+    </ng-container>
   </div>
 </div>
