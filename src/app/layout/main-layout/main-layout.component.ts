@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class MainLayoutComponent {
   inputData = [
     {
-      icon: 'assets/images/pencil.svg',
+      icon: 'assets/images/cover-icon1.svg',
       textColor: 'secondary-color',
       headingClr: 'secondary-color',
       bg: 'primary-bg',

@@ -29,10 +29,10 @@
           display: flex;
           flex-direction: column;
           width: 100%;
-          label{
+          label {
             margin-bottom: 10px;
-            span{
-              color:$danger-color
+            span {
+              color: $danger-color;
             }
           }
           input {
@@ -42,16 +42,15 @@
             color: #333;
             font-size: 16px;
             padding: 10px;
-
+            width: -webkit-fill-available;
             &:focus {
               outline: none;
-              border-color: $primary-color;
-              box-shadow: 0 0 5px $primary-color;
             }
             &::placeholder {
               color: #ccc;
             }
           }
+
           .select-field {
             display: flex;
             align-items: center;
@@ -60,25 +59,24 @@
               margin: 0;
             }
             .flag-select {
-              background: url('https://www.countryflags.io/US/flat/64.png') no-repeat;
+              background: url("../../../../assets/images/america.png") no-repeat;
               background-size: 30px 20px;
               background-position: 5px center;
-              padding: 10px 10px 10px 45px;
-              border: 2px solid #dadce0;
+              padding: 10px 5px 10px 35px;
+              border: 2px solid $primary-color;
+              box-shadow: 0 0 5px $primary-color;
               margin-right: 10px;
+              border-radius: 5px;
+              outline: none;
             }
-
-
-
           }
         }
         p {
           width: 80%;
           color: $light-txtClr;
         }
-
       }
-      button{
+      button {
         float: right;
       }
     }
@@ -106,6 +104,53 @@
   }
 }
 
+input.not-touched {
+  border-color: $primary-color;
+  box-shadow: 0 0 5px $primary-color;
+}
+input.is-valid {
+  border: 2px solid $success-color !important;
+  box-shadow: 0 0 5px $success-color !important;
+}
+input.is-invalid {
+  border: 2px solid $danger-color !important;
+  box-shadow: 0 0 5px $danger-color !important;
+}
+
+.input-with-icon {
+  position: relative;
+  display: inline-block;
+
+  input[type="text"] {
+    padding-right: 30px; // leave space for icon
+    border: 1px solid #ccc; // add a border to the input element
+    border-radius: 4px; // add rounded corners to the input element
+  }
+
+  .icon {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+  }
+}
 
 
+@media only screen and (max-width: 768px) {
+  .container{
+    flex-direction: column;
+    .left-column {
+      width: 85%;
+      p{
+       text-align: center;
+      }
+      h2{
+        text-align: center;
+      }
+    }
+    .right-column{
+      width: 85%;
+    }
+  }
+}
 

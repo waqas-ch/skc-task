@@ -31,22 +31,22 @@ export class CoverImageComponent {
     {
       heading:'250+',
       text:'Academic Writing Experts',
-      icon:'assets/images/pencil.svg'
+      icon:'assets/images/cover-icon1.svg'
     },
     {
       heading:'50%',
       text:'Money Back Guarantee',
-      icon:'assets/images/diamond.svg'
+      icon:'assets/images/cover-icon2.svg'
     },
     {
       heading:'100%',
       text:'Plagiarism Free Content',
-      icon:'assets/images/diamond.svg'
+      icon:'assets/images/cover-icon3.svg'
     },
     {
       heading:'50%',
       text:'Prepay Upfront - Half After We Deliver',
-      icon:'assets/images/Star 1.svg'
+      icon:'assets/images/cover-icon4.svg'
     },
 
   ]

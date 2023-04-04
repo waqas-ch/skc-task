@@ -4,12 +4,6 @@
   display: flex;
   flex-direction: row;
 
-  .col {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-  }
-
   .left-col {
     overflow-y: scroll;
     max-height: 375px;
@@ -64,7 +58,6 @@
     overflow-y: scroll;
     max-height: 375px;
     flex: 1;
-
     margin: 25px;
 
       p {
@@ -84,6 +77,18 @@
     &::-webkit-scrollbar-thumb {
       background-color:$secondary-color;
       border-radius: 5px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .row{
+    flex-direction: column;
+    .left-col{
+      width: 100%;
+    }
+    .right-col{
+      width: 100%;
     }
   }
 }

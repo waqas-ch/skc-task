@@ -2,7 +2,7 @@
   <h2 class="card__heading">Summary</h2>
   <div class="card__row">
     <div class="card__label">Sub-Total:</div>
-    <div class="card__value">$30</div>
+    <div class="card__value">${{paymentDetail.actual_price}}</div>
   </div>
   <div class="card__row">
     <div class="card__labelS">You save $20</div>
@@ -16,7 +16,7 @@
   </div>
   <div class="card__row total">
     <div class="card__label">Total:</div>
-    <div class="card__value">$80.00</div>
+    <div class="card__value">${{paymentDetail.discounted_price}}</div>
   </div>
   <div class="card__radio">
     <input type="radio" id="agree">

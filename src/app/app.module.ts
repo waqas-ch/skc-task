@@ -13,6 +13,8 @@ import { CustomEssayComponent } from './layout/main-layout/custom-essay/custom-e
 import { PaymentComponent } from './layout/main-layout/payment/payment.component';
 import { BillComponent } from './layout/main-layout/bill/bill.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
+import { ResponseInterceptor } from './interceptors/response.interceptor';
 
 @NgModule({
   declarations: [
@@ -30,9 +32,14 @@ import { ReactiveFormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [
+    { provide: HTTP_INTERCEPTORS, useClass: ResponseInterceptor, multi: true },
+
+  ],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }

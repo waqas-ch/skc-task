@@ -6,13 +6,23 @@
       <div class="sub-container">
         <form [formGroup]="form">
           <label for="email">Email Address<span>*</span></label>
-          <input
-            type="email"
-            placeholder="abc@gmail.com"
-            formControlName="email"
-            id="email"
-            name="email"
-          /><br />
+          <div class="input-with-icon">
+            <input
+              type="email"
+              placeholder="abc@gmail.com"
+              formControlName="email"
+              id="email"
+              name="email"
+              [ngClass]="validationClass('email')"
+            />
+
+            <img
+              *ngIf="validationClass('email') == 'is-valid'"
+              class="icon"
+              src="assets/images/success.svg"
+            />
+          </div>
+          <br />
           <label for="email">Phone Number<span>*</span></label>
 
           <div class="select-field">
@@ -22,9 +32,10 @@
 
             <input
               type="tel"
+              [ngClass]="validationClass('phone')"
               name="phone"
               id="phone"
-              formControlName="mobile"
+              formControlName="phone"
               placeholder="Enter phone number"
             />
           </div>
@@ -41,7 +52,7 @@
 
   <div class="right-column">
     <div class="card">
-      <app-bill></app-bill>
+      <app-bill [paymentDetail]="paymentDetail"></app-bill>
     </div>
 
     <div class="card">
