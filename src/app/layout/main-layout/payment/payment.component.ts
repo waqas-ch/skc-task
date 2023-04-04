@@ -16,17 +16,22 @@ export class PaymentComponent implements OnInit {
   constructor(private paymentService: PaymentService) {}
   ngOnInit() {
     this.form = new FormGroup({
-      email: new FormControl('', [Validators.required,Validators.email]),
-      phone: new FormControl('', [Validators.required,Validators.minLength(11)]),
+      email: new FormControl('', [Validators.required, Validators.email]),
+      phone: new FormControl('', [
+        Validators.required,
+        Validators.minLength(11),
+      ]),
     });
   }
   pay() {
-    this.paymentService
-      .getDataPayment(this.form.value)
-      .subscribe((result: any) => {
-        console.log(result);
-        this.paymentDetail = result;
-      });
+    if (this.form.valid) {
+      this.paymentService
+        .getDataPayment(this.form.value)
+        .subscribe((result: any) => {
+          console.log(result);
+          this.paymentDetail = result;
+        });
+    } else this.form.markAllAsTouched();
   }
   validationClass(control: string) {
     if (!this.form.controls[control].touched) return 'not-touched';
