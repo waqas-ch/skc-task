@@ -30,7 +30,7 @@ export class FreqQuestionComponent {
     this.items.forEach((itemx:any)=>
     {
       if(itemx.id!==item.id)
-       itemx.active=!item.active
+       itemx.active=false
     })
   }
 }

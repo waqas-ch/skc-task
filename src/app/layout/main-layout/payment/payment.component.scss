@@ -51,8 +51,7 @@
             width: -webkit-fill-available;
             &:focus {
               outline: none;
-              border: 2px solid $primary-color !important;
-              box-shadow: 0 0 5px $primary-color;
+
             }
             &::placeholder {
               color: #ccc;
@@ -111,7 +110,10 @@
     }
   }
 }
-
+input.not-touched {
+  border-color: $primary-color;
+  box-shadow: 0 0 5px $primary-color;
+}
 input.is-valid {
   border: 2px solid $success-color !important;
   box-shadow: 0 0 5px $success-color !important;
@@ -155,6 +157,10 @@ input.is-invalid {
     .right-column{
       width: 85%;
     }
+  }
+  .select-field{
+    flex-direction: column;
+    gap: 10px;
   }
 }
 

@@ -19,6 +19,7 @@ export class PaymentComponent implements OnInit {
       email: new FormControl('', [Validators.required, Validators.email]),
       phone: new FormControl('', [
         Validators.required,
+        Validators.pattern("^[0-9]*$"),
         Validators.minLength(11),
       ]),
     });

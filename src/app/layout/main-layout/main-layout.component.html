@@ -6,9 +6,11 @@
   </div>
 </div>
 <h1>Essay writing services we offer</h1>
-<div class="row">
-  <div class="col" *ngFor="let data of inputDataSlide; let i= index">
-    <app-card [data]="data" [index]="i" ></app-card>
+<div class="slider">
+  <div class="row">
+    <div class="col" *ngFor="let data of inputDataSlide; let i= index">
+      <app-card [data]="data" [index]="i" ></app-card>
+    </div>
   </div>
 </div>
  <app-freq-question></app-freq-question>

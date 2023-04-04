@@ -12,7 +12,22 @@
     margin-bottom: 20px;
   }
 }
+.slider{
+  .row {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content:start;
+    gap: 1%;
+    align-items: center;
+    padding: 20px;
+    margin: 60px;
 
+    .col {
+      width:30%;
+      margin-bottom: 20px;
+    }
+  }
+}
 h1{
   width: 30%;
   margin: 30px 80px;
@@ -26,6 +41,18 @@ h1{
     margin-right: 0;
     margin-bottom: 20px;
   }
+  }
+  .slider{
+    .row{
+      flex-direction: column;
+      flex-wrap: wrap;
+
+    .col {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+    }
   }
 h1{
   width: 100%;
