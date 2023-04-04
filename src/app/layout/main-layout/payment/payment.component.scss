@@ -51,6 +51,8 @@
             width: -webkit-fill-available;
             &:focus {
               outline: none;
+              border: 2px solid $primary-color !important;
+              box-shadow: 0 0 5px $primary-color;
             }
             &::placeholder {
               color: #ccc;
@@ -110,10 +112,6 @@
   }
 }
 
-input.not-touched {
-  border-color: $primary-color;
-  box-shadow: 0 0 5px $primary-color;
-}
 input.is-valid {
   border: 2px solid $success-color !important;
   box-shadow: 0 0 5px $success-color !important;
@@ -128,9 +126,9 @@ input.is-invalid {
   display: inline-block;
 
   input[type="text"] {
-    padding-right: 30px; // leave space for icon
-    border: 1px solid #ccc; // add a border to the input element
-    border-radius: 4px; // add rounded corners to the input element
+    padding-right: 30px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
   }
 
   .icon {

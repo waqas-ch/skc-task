@@ -12,9 +12,16 @@
   font-family: "LatoFont";
   src: url("./assets/fonts/Lato-BlackItalic.ttf");
 }
+
+@font-face {
+  font-family: "GtWalsh";
+  src: url("./assets/fonts/GTWalsheimPro-Regular.ttf");
+}
 body {
   background: $main_bg;
   margin: 0px;
+  font-family: 'GtWalsh' !important;
+
   .round-icon {
     display: flex;
     justify-content: center;
@@ -85,7 +92,4 @@ body {
     }
   }
 }
-.test-font {
-  font-family: "Smooch";
-  color: $primary-color;
-}
+
